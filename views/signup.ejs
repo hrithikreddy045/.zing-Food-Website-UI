@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head.ejs') %>
+<title> Sign up </title>
+
+<body>
+    
+    <div id = "bg">
+        <div class = "header">
+            <a href = "/index" style = "font-family: 'Chiller'; font-size: 3em;">.zing</a><a class = "link" href = "/login">Login</a>
+        </div>
+    
+        <div class = "main">
+            <form action = "signup" method = "post">    
+                <h1>Sign up</h1>
+                <i class = "fa fa-user"></i>
+                <input type = "text" placeholder = "Full Name" name = "name"> <br>
+                <i class = "fa fa-phone"></i>
+                <input type = "text" placeholder = "Mobile Number" name = "mobileno"> <br>
+                <i class = "fa fa-user-circle-o"></i>
+                <input type = "text" placeholder = "Username" name = "username"> <br>
+                <i class = "fa fa-envelope"></i>
+                <input type = "email" placeholder = "Email" name = "email"> <br>
+                <i class = "fa fa-lock"></i>
+                <input type = "password" placeholder = "Password" name = "pass1"> <br>
+                <i class = "fa fa-unlock-alt"></i>
+                <input type = "text" placeholder = "Confirm Password" name = "pass2"> <br>
+                <button>Save</button>
+            </form>
+        </div>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>
